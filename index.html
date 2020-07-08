@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+    <!--======-->
+    <!-- Head -->
+    <!--======-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Michael Darlow</title>
+
+        <!--*****-->
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="Stylesheet/Portfolio_Website.css">
+        <!--*****-->
+
+    </head>
+    <!----------->
+    <!-- /Head -->
+    <!----------->
+
+
+
+    <!--======-->
+    <!-- Body -->
+    <!--======-->
+    <body class="Background">
+    
+
+
+        <!--========-->
+        <!-- Navbar -->
+        <!--========-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()">Contact</a> <!-- If "Contact" is selected, run openForm() -->
+        </div>
+        <!------------->
+        <!-- /Navbar -->
+        <!------------->
+
+
+
+        <!--======-->
+        <!-- Home -->
+        <!--======-->
+        <div id="Home">
+            <br>
+            <br>
+
+            <!-- Video -->
+            <video autoplay muted loop id="Typing_Video">
+                <source src="Stylesheet/Video/Typing.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video Text -->
+        <div class="Video_Text">
+            <h1 style="color: white;">
+                Michael's Portfolio
+            </h1>
+            <p>
+                <strong>
+                    <center>
+                        <q>Anyone can write code that a computer can understand.
+                            <br>
+                            Good programmers write code that humans can understand.</q>
+                        <br>-Martin Fowler<br>
+                        <br>
+                        Welcome! My name is Michael Darlow and this is my portfolio website,
+                        <br>
+                        where I will tell you about my background and experience.
+                        <br><br>Thank you for stopping by and I hope you enjoy!
+                    </center>
+                </strong>
+            </p>
+        </div>
+
+        <!-- Slideshow -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">
+                            1 / 6
+                        </div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/MichaelDarlow1.jpg.png" style="width:100%">
+                        <div class="text">
+                            I'm available to assist you on your project!
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">
+                            2 / 6
+                        </div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpeg" style="width: 100%">
+                        <div class="text">
+                            I am a Tech Academy student,<br> currently trained in the basics of<br>HTML, CSS, and JavaScript,
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">
+                            3 / 6
+                        </div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Python.png" style="width: 100%">
+                        <div class="text">
+                            and training in the popular programming language Python,
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">
+                            4 / 6
+                        </div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.png" style="width: 100%">
+                        <div class="text">
+                            C#, .NET Framework,
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">
+                            5 / 6
+                        </div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width: 100%">
+                        <div class="text">
+                            back end development, databases and SQL.
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">
+                            6 / 6
+                        </div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width: 100%">
+                        <div class="text">
+                            <a onclick="openForm()" href="#Contact" style="color: white;">
+                                Contact me now!
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Next & previous button controls -->
+                    <a class="Previous" onclick="plusSlides(-1)">
+                        &#10094;
+                    </a>
+                    <a class="Next" onclick="plusSlides(1)">
+                        &#10095;
+                    </a>
+                </div>
+                <br>
+                <!-- Dot controls -->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+        <!----------->
+        <!-- /Home -->
+        <!----------->
+
+
+
+        <!--=======-->
+        <!-- About -->
+        <!--=======-->
+        <div class="Row" id="About">
+            <div class="Column_2">
+                <img src="Stylesheet/Images/Development.jpg" alt="Laptop" style="width: 75%">
+            </div>
+
+            <!-- Right column -->
+            <div class="Column_1">
+                <h1>
+                    About
+                </h1>
+                    <p>
+                        I am a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a> 
+                        who loves to code. As I am planning on graduating by 02/15/2021, I am looking for a full time job 
+                        as a software developer. I have been trained in the basics of HTML, CSS, and JavaScript, and will be 
+                        studying SQL very soon, as well as Python, C#, and others later on in my studies.
+                        <br><br>
+                        Outside of my coding life, I also enjoy staying active by shadow boxing and I love taking care of my 
+                        four Corydoras catfish that are almost ten years old.
+                        <br><br>
+                        I am a hard worker and an efficient learner. I would love to work with you. <a href="#Contact">Contact</a> me below!
+                    </p>
+            </div>
+        </div>
+        <!------------>
+        <!-- /About -->
+        <!------------>
+
+
+
+        <!--========-->
+        <!-- GitHub -->
+        <!--========-->
+        <div class="Row" id="GitHub">
+
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>
+                    GitHub
+                </h1>
+                    <p>
+                        You can view my coding projects on my GitHub profile here:
+                        <br>
+                        <center><a href="https://github.com/mdarlow" target=_"blank">My GitHub</a></center>
+                    </p>
+            </div>
+            
+            <!-- Right column -->
+            <div class="Column_2">
+                
+                <a href="https://github.com/mdarlow" target ="_blank"><img src="Stylesheet/Images/GitHub.png" alt="GitHub"></a>
+            </div>
+        </div>
+        <!------------->
+        <!-- /GitHub -->
+        <!------------->
+
+
+
+        <!--=========-->
+        <!-- Contact -->
+        <!--=========-->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">
+                CONTACT
+            </button>
+            <div class="form-popup" id="myForm">
+                <!-- Using a free online service from https://formspree.io/ to send out contact form to an email address of our choosing.-->
+                <!-- Note: It will not run unless live on the internet. It must be pushed to an online website first. -->
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                    <h1>
+                        Contact
+                    </h1>
+                    <label for="name">
+                        <b>
+                            Name
+                        </b>
+                    </label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone">
+                        <b>
+                            Phone
+                        </b>
+                    </label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email">
+                        <b>
+                            Email
+                        </b>
+                    </label>
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message">
+                        <b>
+                            Message
+                        </b>
+                    </label>
+                        <input type="text" placeholder="Type your message here" name="message">
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+        <!-------------->
+        <!-- /Contact -->
+        <!-------------->
+
+
+
+        <!--========-->
+        <!-- Footer -->
+        <!--========-->
+        <footer>
+            <p>
+                Michael Darlow &#8739; 
+                <a href="http://mdarlow.com/">mdarlow.com</a>
+                <br>
+            </p>
+        </footer>
+        <!------------->
+        <!-- /Footer -->
+        <!------------->
+
+
+
+        <!--************-->
+        <!-- JavaScript -->
+        <script src="JS/Portfolio_Website.js"></script>
+        <!--************-->
+
+    </body>
+    <!----------->
+    <!-- /Body -->
+    <!----------->
+
+
+
+</html>
+
+
